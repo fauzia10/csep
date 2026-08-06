@@ -11,7 +11,6 @@ int main() {
     cout << "Enter the elements: ";
     for(int i = 0; i < n; i++)
         cin >> a[i];
-
     int value;
     cout << "Enter value to search: ";
     cin >> value;
