@@ -32,7 +32,7 @@ int main(){
         count++;
         temp=temp->next;
     }
-    cout<<"no of node:"<<count;
+    cout<<"the length of node is:"<<count;
     return 0;
 
 }

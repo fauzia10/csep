@@ -25,14 +25,18 @@ int main(){
             last=newNode;
         }
     }
-    int count=0;
+    int ele;
+    cout<<"Enter the element you want to search";
+    cin>>ele;
     Node* temp=first;
     while(temp!=NULL){
-        cout<<temp->data<<endl;
-        count++;
+        if(temp->data==ele){
+            cout<<"element found:";
+            return 0;
+        }
         temp=temp->next;
     }
-    cout<<"no of node:"<<count;
+    cout<<"not found";
     return 0;
 
 }
