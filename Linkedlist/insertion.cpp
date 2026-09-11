@@ -25,19 +25,43 @@ int main(){
             last=newNode;
         }
     }
-    int ele;
-    cout<<"Enter element to insert:";
+    //at head
+    // int ele;
+    // cout<<"Enter element to insert:";
+    // cin>>ele;
+    // Node* newNode=new Node;
+    // newNode->data=ele;
+    // newNode->next=first;
+    // first=newNode;
+    // cout << "Linked list after insertion: ";
+    // Node* temp = first;
+    // while(temp != NULL)
+    // {
+    //     cout << temp->data << " ";
+    //     temp = temp->next;
+    // }
+    //at the beginning
+    // int ele;
+    // cout<<"enter the element:";
+    // cin>>ele;
+    // Node* newNode=new Node;
+    // newNode->data=ele;
+    // newNode->next=NULL;
+    // last->next=newNode;
+    // last=newNode;
+    // cout << "Linked list after insertion: ";
+    // Node* temp = first;
+    // while(temp != NULL)
+    // {
+    //     cout << temp->data << " ";
+    //     temp = temp->next;
+    // }
+    int ele,pos;
+    cout<<"enter the element:";
     cin>>ele;
-    Node* newNode=new Node;
-    newNode->data=ele;
-    newNode->next=first;
-    first=newNode;
-    cout << "Linked list after insertion: ";
-    Node* temp = first;
-    while(temp != NULL)
-    {
-        cout << temp->data << " ";
-        temp = temp->next;
-    }
+    cout<<"Enter position";
+    cin>>pos;
+    Node* newNode
+    
     return 0;
 }
