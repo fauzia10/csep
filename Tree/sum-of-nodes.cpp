@@ -23,14 +23,11 @@ Node* insert(Node* root,int key){
     }
     return root;
 }
-int countleaf(Node* root){
-    if(root==nullptr){
+int sumofnodes(Node* root){
+    if (root==nullptr){
         return 0;
     }
-    if(root->left==nullptr && root->right==nullptr){
-        return 1;
-    }
-    return countleaf(root->left) + countleaf(root->right);
+    return (root->data+sumofnodes(root->left)+sumofnodes(root->right));
 }
 void inorder(Node* root){
     if(root==nullptr){
@@ -39,11 +36,12 @@ void inorder(Node* root){
     inorder(root->left);
     cout<<root->data<<" ";
     inorder(root->right);
-    
 }
+
 int main(){
     Node* root=nullptr;
     int n;
+    int count=0;
     cout<<"Enter num of nodes:";
     cin>>n;
     cout<<"Enter values:";
@@ -54,6 +52,6 @@ int main(){
     }
     cout<<"Inorder: ";
     inorder(root);
-    cout << "\nNumber of leaf nodes: " << countleaf(root);
+    cout << "\nSum of leaf nodes: " << sumofnodes(root);
     return 0;
 }
